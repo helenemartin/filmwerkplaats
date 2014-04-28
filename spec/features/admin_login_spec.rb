@@ -26,3 +26,19 @@ feature " admin login" do
 
 
 end
+
+feature "user posting" do
+
+  scenario " user login" do
+    visit 'dashboard/user#new'
+    fill_in :email, with: "helenemartin13@hotmail.com"
+    fill_in :password, with: "bla"
+    fill_in :password_confirmation, with: "bla"
+    click_button "Log in"
+
+    visit '/Filmwerkplaats#log_in'
+
+    page.should have_content "Filmwerkplaats/post_new"
+
+  end
+end
