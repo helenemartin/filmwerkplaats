@@ -1,4 +1,11 @@
 Filmwerkplaats::Application.routes.draw do
+
+
+  
+   root :to => 'Filmwerkplaats/index'
+
+  # See how all your routes lay out with "rake routes"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
