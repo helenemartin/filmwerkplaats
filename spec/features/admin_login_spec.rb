@@ -14,7 +14,7 @@ feature " admin login" do
   end
 
   scenario "making for a new post" do
-    visit '/post#new'
+    visit 'dashboard/post#new'
     fill_in :post_title, with: "Filmwerkplaats"
     select "2", from: :post_type, with: "text"
     click_button "Create"
