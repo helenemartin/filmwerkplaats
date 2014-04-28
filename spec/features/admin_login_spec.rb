@@ -9,12 +9,12 @@ feature " admin login" do
     fill_in :password, with: "helene.martin@fundingcircle.com"
     click_button 'Sign In'
 
-    visit '/Filmwerkplaats/log_in'
+    visit '/Filmwerkplaats#log_in'
 
   end
 
-      scenario "making for a new post" do
-    visit '/post/new'
+  scenario "making for a new post" do
+    visit '/post#new'
     fill_in :post_title, with: "Filmwerkplaats"
     select "2", from: :post_type, with: "text"
     click_button "Create"

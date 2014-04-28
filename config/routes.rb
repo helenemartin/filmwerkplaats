@@ -2,7 +2,7 @@ Filmwerkplaats::Application.routes.draw do
 
 
   
-   root :to => 'Filmwerkplaats/index'
+   root :to => 'dashboard#index'
 
   # See how all your routes lay out with "rake routes"
 
