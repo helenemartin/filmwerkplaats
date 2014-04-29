@@ -1,3 +1,40 @@
-<%= form_for @post do |f| %>
- 
+<%= form_for(@post) do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@idea.errors.count, "error") %> prohibited this idea from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_area :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br />
+    <%= f.text_area :url %>
+  </div>
+  <div class="field">
+    <%= f.label :medium, "16mm" %>
+    <%= f.radio_button :medium, "16mm" %>
+    <br/>
+
+    <%= f.label :medium, "Digital" %>
+    <%= f.radio_button :medium, "Digital" %>
+    <br/>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 <% end %>
+ 
