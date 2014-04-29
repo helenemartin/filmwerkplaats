@@ -5,8 +5,17 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
+  # def show
+  #   @post= Post.find(params[:id])
+  # end
   def show
-    @post= Post.find(params[:id])
+    @post = Post.find(params[:id])
+    # authorize! :read, @article
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @post }
+    end
   end
 
   def create
@@ -42,15 +51,7 @@ end
 
 #   # GET /posts/1
 #   # GET /posts/1.json
-#   def show
-#     @post = Post.find(params[:id])
-#     # authorize! :read, @article
-
-#     respond_to do |format|
-#       format.html # show.html.erb
-#       format.json { render json: @post }
-#     end
-#   end
+  
 
 #   # GET /ideas/new
 #   # GET /ideas/new.json
