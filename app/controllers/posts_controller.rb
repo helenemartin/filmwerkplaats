@@ -1,9 +1,6 @@
-class PostController < ApplicationController
+class PostsController < ApplicationController
 
-  def new
-    @post = Post.new
-
-  GET /posts.json
+  # GET /posts.json
   def index
     @post = Post.all
     respond_to do |format|
@@ -12,8 +9,8 @@ class PostController < ApplicationController
     end
   end
 
-  GET /posts/1
-  GET /posts/1.json
+  # GET /posts/1
+  # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
     # authorize! :read, @article
@@ -24,15 +21,15 @@ class PostController < ApplicationController
     end
   end
 
-  GET /ideas/new
-  GET /ideas/new.json
+  # GET /ideas/new
+  # GET /ideas/new.json
   def new
-    @idea = Idea.new
+    @post = Post.new
 
     if user_signed_in?
       respond_to do |format|
         format.html # new.html.erb
-        format.json { render json: @idea }
+        format.json { render json: @post }
       end
     else 
       flash[:alert] = 'You need to be logged in!'
@@ -41,13 +38,13 @@ class PostController < ApplicationController
     end
   end
 
-  GET /posts/1/edit
+  # GET /posts/1/edit
   def edit
     @post= Post.find(params[:id])
   end
 
-  POST /posts
-  POST /posts.json
+  # POST /posts
+  # POST /posts.json
   def create
     @post = Post.new(params[:post])
 
@@ -62,8 +59,8 @@ class PostController < ApplicationController
     end
   end
 
-  PUT /posts/1
-  PUT /posts/1.json
+  # PUT /posts/1
+  # PUT /posts/1.json
   def update
     @post = Post.find(params[:id])
 
@@ -78,8 +75,8 @@ class PostController < ApplicationController
     end
   end
 
-  DELETE /posts/1
-  DELETE /posts/1.json
+  # DELETE /posts/1
+  # DELETE /posts/1.json
   def destroy
     @post = Post.find(params[:id])
     @post.destroy

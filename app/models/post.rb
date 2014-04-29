@@ -1,9 +1,9 @@
-class Post < ActiveRecord::Base
 
-  has_many :posts
+  class Post< ActiveRecord::Base
 
-  validates :title, presence: true
-  validates :type, presence: true
-  validates :number_of_taxis, numericality: true
+  belongs_to  :user
+  has_many :tags, :dependent => :destroy
+
 
 end
+
