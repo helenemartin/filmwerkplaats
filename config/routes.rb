@@ -4,8 +4,10 @@ Filmwerkplaats::Application.routes.draw do
   devise_for :admins
   devise_for :users
   # get '/filmwerkplaats#log_in' => 'dashboard#index'
+
+  resources :posts
   
-   root :to => 'dashboard#index'
+  root :to => 'dashboard#index'
 
   # See how all your routes lay out with "rake routes"
 

@@ -7,8 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <div class="navbar">
+      
+            <ul class="nav">
+              <li><%= link_to "Nederlands", "/locales/nl"  %></li>
+              <li><%= link_to "Français", "/locales/fr"  %></li>
+            </ul>
+    </div>
 
-<%= yield %>
+    <%= yield %>
 
 </body>
 </html>
