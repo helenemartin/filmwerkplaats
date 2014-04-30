@@ -7,7 +7,7 @@ Filmwerkplaats::Application.routes.draw do
 
   resources :posts
   
-  root :to => 'dashboard#index'
+  root :to => 'posts#index' # show a list of existing posts
 
   # See how all your routes lay out with "rake routes"
 

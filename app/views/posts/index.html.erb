@@ -1,6 +1,4 @@
-<h1>Listing posts for <%= ENV['LIST_TITLE'] %></h1>
-
-
+<h1>Listing public posts</h1>
 
 <% @posts.each do |post| %>
   <div class="row">
@@ -9,10 +7,7 @@
       <%= simple_format post.description %>
       <br/>
       <%= link_to 'Show', post %>
-      <%= render :partial => "admin_links", :locals => { :post => post } %>
+      <%# render :partial => "admin_links", :locals => { :post => post } %>
     </div>
-  <div/>
-<% end %>
-<% if can?(:manage, @posts) %>
-  <%= link_to 'New Post', post_new_path %>
+  </div>
 <% end %>
