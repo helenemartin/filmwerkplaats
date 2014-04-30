@@ -1,0 +1,18 @@
+<h1>Listing posts for <%= ENV['LIST_TITLE'] %></h1>
+
+
+
+<% @posts.each do |post| %>
+  <div class="row">
+    <div class="span4">
+      
+      <%= simple_format post.description %>
+      <br/>
+      <%= link_to 'Show', post %>
+      <%= render :partial => "admin_links", :locals => { :post => post } %>
+    </div>
+  <div/>
+<% end %>
+<% if can?(:manage, @posts) %>
+  <%= link_to 'New Post', post_new_path %>
+<% end %>
