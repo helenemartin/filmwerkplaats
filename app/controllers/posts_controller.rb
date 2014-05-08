@@ -32,6 +32,16 @@ class PostsController < ApplicationController
     @posts= Post.all
   end
 
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+
+    respond_to do |format|
+      format.html { redirect_to posts_path }
+      format.json { head :no_content }
+    end
+  end
+
   private
 
   def post_params
@@ -109,13 +119,13 @@ end
 
 #   # DELETE /posts/1
 #   # DELETE /posts/1.json
-#   def destroy
-#     @post = Post.find(params[:id])
-#     @post.destroy
+  # def destroy
+  #   @post = Post.find(params[:id])
+  #   @post.destroy
 
-#     respond_to do |format|
-#       format.html { redirect_to dashboard_url }
-#       format.json { head :no_content }
-#     end
+  #   respond_to do |format|
+  #     format.html { redirect_to dashboard_url }
+  #     format.json { head :no_content }
+  #   end
 #   end
 # end

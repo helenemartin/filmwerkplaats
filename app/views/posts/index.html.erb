@@ -1,13 +1,16 @@
 <h1>Listing public posts</h1>
 
+  <%= link_to 'New Post' , new_post_path %>
+
 <% @posts.each do |post| %>
   <div class="row">
     <div class="span4">
       
       <%= simple_format post.description %>
-      <br/>
-      <%= link_to 'Show', post %>
+      <%= link_to 'Show', post_path(post) %>
       <%# render :partial => "admin_links", :locals => { :post => post } %>
+      <%= link_to 'Delete', post_path(post), method: :delete, confirm: "Are you sure?" %>
+      method: :delete
     </div>
   </div>
 <% end %>
