@@ -1,5 +1,6 @@
 
 class Post< ActiveRecord::Base
+  acts_as_taggable
 
   # auto_html_for :url do
   #   html_escape
