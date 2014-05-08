@@ -4,7 +4,7 @@ Filmwerkplaats::Application.routes.draw do
   devise_for :admins
   devise_for :users
   # get '/filmwerkplaats#log_in' => 'dashboard#index'
-
+  get 'tags/:tag', to: 'posts#index', as: :tag
   resources :posts
   
   root :to => 'posts#index' # show a list of existing posts

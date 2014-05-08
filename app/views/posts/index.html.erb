@@ -5,6 +5,10 @@
 <% @posts.each do |post| %>
   <div class="row">
     <div class="span4">
+      Tags:
+      <% post.tag_list.each do |tag| %>
+        <%= link_to tag, tag_path(tag)  %>
+      <% end %>
       
       <%= simple_format post.description %>
       <%= link_to 'Show', post_path(post) %>
