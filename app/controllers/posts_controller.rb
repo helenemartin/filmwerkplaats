@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+    autocomplete :tag, :name,  :class_name => 'ActsAsTaggableOn::Tag' 
 
 
   def new
@@ -29,7 +30,25 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts= Post.all
+    if params[:tag]
+      @posts = Post.tagged_with(params[:tag])
+    else
+      @posts = Post.all
+    end
+  end
+
+   def update
+    @post = Post.find(params[:id])
+
+    respond_to do |format|
+      if @post.update_attributes(params[:idea])
+        format.html { redirect_to @post, notice: 'Idea was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @post.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def destroy
@@ -48,7 +67,6 @@ class PostsController < ApplicationController
     params.require(:post).permit(:title, :description, :url, :medium, :tag_list)
   end
 
-end
 
 #   # GET /posts.json
 #   def index
@@ -128,4 +146,4 @@ end
   #     format.json { head :no_content }
   #   end
 #   end
-# end
+end

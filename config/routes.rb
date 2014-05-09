@@ -5,9 +5,13 @@ Filmwerkplaats::Application.routes.draw do
   devise_for :users
   # get '/filmwerkplaats#log_in' => 'dashboard#index'
   get 'tags/:tag', to: 'posts#index', as: :tag
-  resources :posts
+
+  resources :posts do
+  get :autocomplete_tag_name, :on => :collection    
+  end
   
-  root :to => 'posts#index' # show a list of existing posts
+  root :to => 'posts#index' 
+   # show a list of existing posts
 
   # See how all your routes lay out with "rake routes"
 

@@ -32,6 +32,7 @@ gem 'devise'
 
 gem "auto_html"
 gem 'acts-as-taggable-on'
+gem 'rails4-autocomplete'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

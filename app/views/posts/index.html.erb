@@ -1,4 +1,12 @@
 <h1>Listing public posts</h1>
+  <div id="tag_cloud">
+    <div id="tag_cloud">
+    <% tag_cloud Post.tag_counts, %w{s m l} do |tag, css_class| %>
+    <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+  <% end %>
+</div>
+      
+  </div>
 
   <%= link_to 'New Post' , new_post_path %>
 
@@ -9,7 +17,6 @@
       <% post.tag_list.each do |tag| %>
         <%= link_to tag, tag_path(tag)  %>
       <% end %>
-      
       <%= simple_format post.description %>
       <%= link_to 'Show', post_path(post) %>
       <%# render :partial => "admin_links", :locals => { :post => post } %>

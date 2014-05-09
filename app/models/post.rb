@@ -1,6 +1,16 @@
 
-class Post< ActiveRecord::Base
+class Post < ActiveRecord::Base
   acts_as_taggable
+
+  # belongs_to :tags
+
+  #   def tag_list
+  #     tag.try(:tag)
+  #   end
+
+  #   def tag_list=(name)
+  #     self.tag = Tag.find_by_name(name) if name.present?
+  #   end
 
   # auto_html_for :url do
   #   html_escape
