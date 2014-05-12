@@ -18,39 +18,15 @@
 
 @font-face {
   font-family: 'Ostrich';
-  font-weight: normal;
-  src:  url('../fonts/ostrich-regular-webfont.eot?') format('eot'), 
-      url('../fonts/ostrich-regular-webfont.woff') format('woff'), 
-      url('../fonts/ostrich-regular-webfont.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Ostrich';
   font-weight: bold;
-  src:  url('../fonts/ostrich-bold-webfont.eot?') format('eot'), 
-      url('../fonts/ostrich-bold-webfont.woff') format('woff'), 
-      url('../fonts/ostrich-bold-webfont.ttf') format('truetype');
+  src:  font-url('/assets/ostrich-bold-webfont.eot') format('eot'), 
+      font-url('/assets/ostrich-bold-webfont.woff') format('woff'), 
+      font-url('/assets/ostrich-bold-webfont.ttf') format('truetype');
 }
 
-
-@font-face {
-  font-family: 'Ostrich';
-  font-weight: dashed;
-  src:  url('../fonts/ostrich-dashed-webfont.eot?') format('eot'), 
-      url('../fonts/ostrich-dashed-webfont.woff') format('woff'), 
-      url('../fonts/ostrich-dashed-webfont.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Junction';
-  src:  url('../fonts/Junction-webfont.eot?') format('eot'), 
-      url('../fonts/Junction-webfont.woff') format('woff'), 
-      url('../fonts/Junction-webfont.ttf') format('truetype');
-}
 
 body {
-  
-  font-family: "Junction", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: dashed;
   font-size: 80px;
   margin: 0px;
@@ -90,6 +66,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+  font-family: Ostrich, Arial, sans-serif;
   font-weight:normal;
 }
 
