@@ -9,18 +9,53 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-    <div class="navbar">
-      
-            <ul class="nav">
-              <li><%= link_to "Nederlands" %></li>
-              <li><%= link_to "Français" %></li>
+  <div id="wrapper">
+
+<!-- BEGIN #container -->
+  <div id="container">
+    
+    <!-- BEGIN #header -->
+        <header>
+            
+             <div class="my-picture">
+        <%= image_tag "filmwerkplaatslogoblack.jpg" %>
+      </div>
+            <!-- BEGIN #mainMenu -->
+      <nav>
+
+
+
+            <ul class="topMenu">
+               
+              <li><%= link_to "Home" %></li>
+              <li><%= link_to "About" %></li>
+                <li><%= link_to "Member" %></li>
+                <li><%= link_to "Equipment" %></li>
+                <li><%= link_to "Blog" %></li>
+         
             </ul>
-    </div>
-      <div id="tag_cloud">
-      <% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
-        <% end %>
-    </div>
-    <p class="navbar-text pull-right">
+            
+            </nav>            
+            <!-- END #mainMenu -->
+      
+            
+             <!-- BEGIN #socialMedia -->
+      <div id="socialMedia">
+        <ul>
+
+                <li class="linkedIn"><a href="#">LinkedIn</a></li>
+                <li class="twitter"><a href="#">Twitter</a></li>
+                <li class="facebook"><a href="#">Facebook</a></li>
+                <li class="rss"><a href="#">RSS</a></li>
+        </ul>
+              
+      </div>  
+      <!-- END #socialMedia -->
+
+            
+    </header>
+    
+    <!-- <p class="navbar-text pull-right"> -->
 <% if user_signed_in? %>
   Logged in as <strong><%= current_user.email %></strong>.
   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
@@ -38,6 +73,6 @@
   <% end %>
 
     <%= yield %>
-
+ </div>
 </body>
 </html>
