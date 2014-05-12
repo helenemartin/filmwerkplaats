@@ -19,10 +19,14 @@ class PostsController < ApplicationController
     end
   end
 
+   before_action :authenticate_user!, except: [:index]
+
   def create
     @post = Post.new(post_params)
     if @post.valid?
+      @post.photo = params[:file]
       @post.save
+
       redirect_to @post
     else
       render :new

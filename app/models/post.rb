@@ -1,6 +1,7 @@
 
 class Post < ActiveRecord::Base
   acts_as_taggable
+  mount_uploader :photo, PhotoUploader
 
   # belongs_to :tags
 

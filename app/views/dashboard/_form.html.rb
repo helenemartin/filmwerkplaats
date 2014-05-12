@@ -1,4 +1,4 @@
-<%= form_for(@post) do |f| %>
+<%= form_for (@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@idea.errors.count, "error") %> prohibited this idea from being saved:</h2>
@@ -15,9 +15,14 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
+  
   <div class="field">
     <%= f.label :description %><br />
     <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :photo %><br />
+    <%= f.file_field :photo %>
   </div>
   <div class="field">
     <%= f.label :url %><br />
