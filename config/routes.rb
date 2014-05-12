@@ -7,7 +7,7 @@ Filmwerkplaats::Application.routes.draw do
   get 'tags/:tag', to: 'posts#index', as: :tag
 
   resources :posts do
-  get :autocomplete_tag_name, :on => :collection    
+    get :autocomplete_tag_name, :on => :collection    
   end
   
   root :to => 'posts#index' 
