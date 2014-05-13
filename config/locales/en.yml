@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+  posts:
+    index:
+      show_link: "Show"

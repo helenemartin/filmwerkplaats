@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
@@ -33,8 +34,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'cancan' 
 gem 'devise'
 
-
-
+gem 'rails-assets-packery'
 
 gem "auto_html"
 gem 'acts-as-taggable-on'
