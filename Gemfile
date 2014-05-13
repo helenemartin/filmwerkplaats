@@ -32,6 +32,9 @@ gem 'jbuilder', '~> 1.2'
 gem 'cancan' 
 gem 'devise'
 
+gem "fog", "~> 1.3.1"
+gem "nokogiri", '~> 1.5.0'
+
 gem "auto_html"
 gem 'acts-as-taggable-on'
 gem 'rails4-autocomplete'

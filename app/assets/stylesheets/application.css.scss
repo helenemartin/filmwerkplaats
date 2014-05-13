@@ -133,13 +133,14 @@ h4 {
   float: left;
   text-align: left;
   margin-left: 1.5957447%;
-  width: 36.1702128%; /* 340px/940px */
+  width: 36.1702128%; /* 340px/940px 
 }
-.my-picture img {
- size: 20px;
+
+img {
+ size: 80px;
  display: inline-block;
- padding: 10px 0 20px;
- height: 65px;
+ padding: 2px 0 20px;
+
 
 
 }
@@ -177,9 +178,10 @@ nav {
 /* Navigation */
 
 nav {
-  float: right;
-  margin-top: 5px;
-  margin-right: 0,0053191%; /* 5px/940px */
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 0,0319148%; /* 5px/940px */
 }
 nav ul li {
   display: inline;
