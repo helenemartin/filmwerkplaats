@@ -11,12 +11,16 @@
   <%= link_to 'New Post' , new_post_path %>
 
 <% @posts.each do |post| %>
-  <div class="row">
+ 
     <div class="span4">
       Tags:
       <% post.tag_list.each do |tag| %>
         <%= link_to tag, tag_path(tag)  %>
       <% end %>
+    
+
+      <%= link_to image_tag(post.photo_url, :width => 300), post_path(post) if post.photo.present? %>
+
       <%= simple_format post.description %>
       <%= link_to 'Show', post_path(post) %>
       <%# render :partial => "admin_links", :locals => { :post => post } %>
