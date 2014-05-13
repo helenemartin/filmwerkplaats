@@ -4,6 +4,8 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @uploader = Post.new.photo
+
   end
 
   # def show
@@ -24,7 +26,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.valid?
-      @post.photo = params[:file]
+      @post.photo = params[:post][:photo]
       @post.save
 
       redirect_to @post

@@ -24,27 +24,18 @@
     <%= f.label :description %><br />
     <%= f.text_area :description %>
   </div>
-  <div class="field">
-    <%= f.label :photo %><br />
-    <%= f.file_field :photo %>
-  </div>
+  
   <div class="field">
     <%= f.label :url %><br />
     <%= f.text_area :url %>
   </div>
-  
-  <div class="field">
-    <%= f.label :medium, "16mm" %>
-    <%= f.radio_button :medium, "16mm" %>
-    <br/>
-
-    <%= f.label :medium, "Digital" %>
-    <%= f.radio_button :medium, "Digital" %>
-    <br/>
+  <div class= "field">
+        <p><%= f.label :photo %></p>
+        <p><%= f.file_field :photo %></p>
   </div>
+  
 
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
- 

@@ -83,7 +83,7 @@ h2 {
   font-weight:normal;
 }
 
-h3 { /* even though there are no h3 tags, it's sometimes good practice to just set up all the h1-h4 tags */
+h3 { 
   font-size:18px;
   padding-top:10px;
 }
@@ -133,25 +133,22 @@ h4 {
   float: left;
   text-align: left;
   margin-left: 1.5957447%;
-  width: 36.1702128%; /* 340px/940px 
+  width: 36.1702128%;  /*340px/940px */
 }
 
-img {
+/*img {
  size: 80px;
  display: inline-block;
  padding: 2px 0 20px;
-
-
-
 }
-
+*/
 
 
 
 
 /*----------------------------------------------------------------------------- 
 =03 NAVIGATION (mainMenu)
------------------------------------------------------------------------------*/
+-----------------------------------------------------------------------------
 
 /*
 nav {

@@ -10,6 +10,7 @@ gem 'pg'
 gem 'sass-rails', '~> 4.0.0'
 
 gem 'carrierwave'
+gem 'fog'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -32,8 +33,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'cancan' 
 gem 'devise'
 
-gem "fog", "~> 1.3.1"
-gem "nokogiri", '~> 1.5.0'
+
+
 
 gem "auto_html"
 gem 'acts-as-taggable-on'
@@ -48,6 +49,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'capybara'
+
+gem 'pry'
 end
 
 # Use ActiveModel has_secure_password

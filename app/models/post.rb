@@ -20,11 +20,31 @@ class Post < ActiveRecord::Base
   #   link :target => "_blank", :rel => "nofollow"
   #   simple_format
   # end
+# after_save :enqueue_image
+  
+  def photo_name
+    File.basename(photo.path || photo.filename) if photo
+  end
 
+  # def enqueue_photo
+  #   ImageWorker.perform_async(id, key) if key.present?
+  # end
 
-  # belongs_to  :user
-  # has_many :tags, :dependent => :destroy
-
-
+  # class ImageWorker
+  #   include Sidekiq::Worker
+    
+  #   def perform(id, key)
+  #     post = Post.find(id)
+  #     post.key = key
+  #     post.remote_photo_url = post.photo.direct_fog_url(with_path: true)
+  #     post.save!
+  #     postupdate_column(:photo_processed, true)
+  #   end
+  # end
 end
+
+
+
+
+
 

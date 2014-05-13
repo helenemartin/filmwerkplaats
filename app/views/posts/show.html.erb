@@ -1,6 +1,6 @@
 <p><%= @post.title %> has been uploaded correctly
 
-  <%= image_tag(@post.photo_url, :width => 600) if @post.photo.present? %>
+  <%= image_tag(@post.photo_url, :width => 300) if @post.photo.present? %>
 
   <%= link_to @post.title, posts_path %>.
 
