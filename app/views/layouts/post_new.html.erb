@@ -1,9 +1,0 @@
-<%= form_for(@article) do |f| %>
-  <%= f.autocomplete_field :tag_list, autocomplete_tag_name_articles_path, :"data-delimiter" => ', ' %> 
-  # note tag_list above is a virtual column created by acts_as_taggable_on
-
-
-<%= render 'form' %>
-
-<%= link_to 'Back', post_path %>
-<% end %>
