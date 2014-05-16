@@ -2,6 +2,14 @@
 
   <%= image_tag(@post.photo_url, :width => 300) if @post.photo.present? %>
 
+  <% if @post.video.present? %>
+    <div class="flowplayer">
+      <video>
+        <source type="<%= @post.video.file.content_type %>" src="<%= @post.video.url %>">
+      </video>
+    </div>
+  <% end %>
+
   <%= link_to @post.title, posts_path %>.
 
 

@@ -240,7 +240,11 @@ nav ul li a:hover {
 /*----------------------------------------------------------------------------- 
 =04 SOCIAL MEDIA  
 -----------------------------------------------------------------------------*/
-
+#signin{
+  position: relative;
+  float: left;
+  margin: 2px 1px;
+}
 
 #socialMedia {
   position:absolute;
@@ -270,7 +274,6 @@ nav ul li a:hover {
 #socialMedia ul li.rss {
   background:url(/assets/filmwerkplaatsnav.png) -180px 64px; 
 }
-
 
 
 #socialMedia ul li.linkedIn:hover {

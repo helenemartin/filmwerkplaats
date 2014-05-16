@@ -1,7 +1,8 @@
 
 class Post < ActiveRecord::Base
   acts_as_taggable
-  mount_uploader :photo, PhotoUploader
+  mount_uploader :photo, FileUploader
+  mount_uploader :video, FileUploader
 
   # belongs_to :tags
 
@@ -22,10 +23,15 @@ class Post < ActiveRecord::Base
   # end
 # after_save :enqueue_image
   
-  def photo_name
-    File.basename(photo.path || photo.filename) if photo
-  end
+  # def photo_name
+  #   File.basename(photo.path || photo.filename) if photo
+  # end
 
+  # def video_name
+  #   File.basename(video.path || video.filename) if video
+  # end
+
+  
   # def enqueue_photo
   #   ImageWorker.perform_async(id, key) if key.present?
   # end

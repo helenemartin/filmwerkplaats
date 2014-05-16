@@ -4,7 +4,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
-    @uploader = Post.new.photo
+
 
   end
 
@@ -27,6 +27,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     if @post.valid?
       @post.photo = params[:post][:photo]
+      @post.video = params[:post][:video]
       @post.save
 
       redirect_to @post
