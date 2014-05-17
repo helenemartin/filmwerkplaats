@@ -17,11 +17,8 @@
       <% post.tag_list.each do |tag| %>
         <%= link_to tag, tag_path(tag)  %>
       <% end %>
-    
-
       <%= link_to image_tag(post.photo_url, :width => 300), post_path(post) if post.photo.present? %>
       <%= link_to video_tag(post.video_url, :width => 300), post_path(post) if post.video.present? %>
-
       <%= simple_format post.description %>
       <%= link_to t("posts.index.show_link"), post_path(post) %>
       <%# render :partial => "admin_links", :locals => { :post => post } %>
