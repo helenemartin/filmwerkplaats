@@ -4,6 +4,8 @@ class Post < ActiveRecord::Base
   mount_uploader :photo, FileUploader
   mount_uploader :video, FileUploader
 
+  has_many :tags
+
   # belongs_to :tags
 
   #   def tag_list

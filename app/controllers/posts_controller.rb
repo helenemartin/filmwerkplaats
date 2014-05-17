@@ -44,16 +44,14 @@ class PostsController < ApplicationController
     end
   end
 
-   def update
-    @post = Post.find(params[:id])
-
+  def update
     respond_to do |format|
-      if @post.update_attributes(params[:idea])
-        format.html { redirect_to @post, notice: 'Idea was successfully updated.' }
+      if @product.update(product_params)
+        format.html { redirect_to @product, notice: 'Post was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+        format.html { render action: 'edit' }
+        format.json { render json: @product.errors, status: :unprocessable_entity }
       end
     end
   end

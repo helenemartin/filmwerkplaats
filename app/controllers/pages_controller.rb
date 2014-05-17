@@ -5,4 +5,3 @@ class PagesController < ActionController::Base
   end
 end
 
-match '/about' => 'pages#about'

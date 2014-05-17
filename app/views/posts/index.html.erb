@@ -25,6 +25,7 @@
       <%= link_to t("posts.index.show_link"), post_path(post) %>
       <%# render :partial => "admin_links", :locals => { :post => post } %>
       <% if signed_in? %>
+        <%= link_to 'Edit', edit_post_path(post) %>
         <%= link_to 'Delete', post_path(post), method: :delete, confirm: "Are you sure?" %>
       <% end %>
     </div>

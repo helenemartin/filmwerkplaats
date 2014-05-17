@@ -11,7 +11,7 @@ Filmwerkplaats::Application.routes.draw do
   end
   
   root :to => 'posts#index' 
-   # show a list of existing posts
+ # show a list of existing posts
 
   # See how all your routes lay out with "rake routes"
 
