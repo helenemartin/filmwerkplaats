@@ -1,6 +1,7 @@
 Filmwerkplaats::Application.routes.draw do
   
 
+  get "pages/about"
   devise_for :admins
   devise_for :users
   # get '/filmwerkplaats#log_in' => 'dashboard#index'
