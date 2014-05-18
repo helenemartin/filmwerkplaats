@@ -17,13 +17,12 @@
   <div id="container">
     
 <!-- BEGIN #header -->
-        <header>
-            
+    <header>
             <div class="group">
                <div class= "logo">
               <%= image_tag "filmwerkplaatslogoblack.jpg" %>
                <h1>Filmwerkplaats'Plot Machine</h1>
-              </div>
+            </div>
               <nav>
                 Language:
                 <%= link_to_unless_current "English", locale: "en" %> |
@@ -40,11 +39,10 @@
 
       <div id="socialMedia">
         <ul>
-
-          <li class="linkedIn"><a href="#">LinkedIn</a></li>
-          <li class="twitter"><a href="#">Twitter</a></li>
           <li class="facebook"><a href="#">Facebook</a></li>
-          <!-- <li class="rss"><a href="#">RSS</a></li> -->
+          <li class="vimeo"><a href="#">Vimeo</a></li>
+          <li class="linkedIn"><a href="#">Linkedin</a></li>
+          <li class="rss"><a href="#">RSS</a></li>
         </ul>    
       </div>  
        <div id="signin">
@@ -62,7 +60,7 @@
               <% if alert %>
                 <p class="alert alert-danger"><%= alert %></p>
               <% end %>
-            </div>
+        </div>
           <div class="clear"></div>
 
     <section class="group main">
@@ -76,11 +74,12 @@
     </section>
           <div class="clear"></div>
         <footer>
-        
           <div id="copyright">
             &copy; Copyright 2014 H&eacutel&egravene.
           </div>   
         </footer>
-    </div>
+
+   </div>
+  </div>
   </body>
 </html>
