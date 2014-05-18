@@ -25,6 +25,9 @@
                <h1>Filmwerkplaats</h1>
               </div>
               <nav>
+                Language:
+                <%= link_to_unless_current "English", locale: "en" %> |
+                <%= link_to_unless_current "French", locale: "fr" %>
               <ul>   
                 <li><%= link_to "Home", posts_path %></li>
                 <li><%= link_to "About", pages_about_path %></li>
