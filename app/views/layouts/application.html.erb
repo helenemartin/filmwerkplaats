@@ -31,10 +31,23 @@
               <ul>   
                 <li><%= link_to "Home", posts_path %></li>
                 <li><%= link_to "About", pages_about_path %></li>
-                <li><%= link_to "Filmwerkplaats" %></li>
+                <li><%= link_to "Filmwerkplaats", "http://filmwerkplaats.hotglue.me/about" %></li>
               </ul>     
-            
-             <div id="signin">
+             </nav>
+          </div> 
+          <div class="clear"></div>
+    </header>
+
+      <div id="socialMedia">
+        <ul>
+
+          <li class="linkedIn"><a href="tps://www.linkedin.com/pub/filmwerkplaats-rotterdam/28/110/8aa">LinkedIn</a></li>
+          <li class="twitter"><a href="#">Twitter</a></li>
+          <li class="facebook"><a href="#">Facebook</a></li>
+          <!-- <li class="rss"><a href="#">RSS</a></li> -->
+        </ul>    
+      </div>  
+       <div id="signin">
               <% if user_signed_in? %>
                 Logged in as <strong><%= current_user.email %></strong>.
                 <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
@@ -50,20 +63,8 @@
                 <p class="alert alert-danger"><%= alert %></p>
               <% end %>
             </div>
-             </nav>
+          <div class="clear"></div>
 
-          </div>  
-    </header>
-
-      <div id="socialMedia">
-        <ul>
-
-          <li class="linkedIn"><a href="#">LinkedIn</a></li>
-          <li class="twitter"><a href="#">Twitter</a></li>
-          <li class="facebook"><a href="#">Facebook</a></li>
-          <li class="rss"><a href="#">RSS</a></li>
-        </ul>    
-      </div>  
     <section class="group main">
         <div class="primary content">
           <div class="inner">
@@ -72,19 +73,14 @@
           
           </div>
         </div>
+    </section>
           <div class="clear"></div>
         <footer>
         
           <div id="copyright">
             &copy; Copyright 2014 H&eacutel&egravene.
-          </div>
-
-          <div id="companybottom">
-            With the support of <a href="http://filmwerkplaats.hotglue.me/about">Filmwerkplaats</a>
-          </div>
-          
+          </div>   
         </footer>
-      </div> 
     </div>
   </body>
 </html>
