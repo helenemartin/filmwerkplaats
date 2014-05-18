@@ -20,7 +20,5 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-  posts:
     index:
-      show_link: "Show"
+      nav: "Home"
