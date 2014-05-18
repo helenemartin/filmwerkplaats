@@ -288,7 +288,23 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
 
+.portrait {
+  text-align: center;
+  
+}
+.portrait img {
+  border-radius: 50%;
+  height: 150px;
+}
 
 
 
@@ -307,8 +323,8 @@ footer {
 
 #copyright {  
   float:left;
-  padding: 20px;
-  width: 290px;
+  padding: 10px;
+  width: 200px;
 }
 
 
