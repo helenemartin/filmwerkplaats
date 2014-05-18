@@ -103,45 +103,15 @@ h4 {
   margin: 40px auto;
   max-width: 1300px;
 }
-/*#wrapper {
-  background:url(/assets/bg_wrapper.png) 0 0 repeat-x;
-}
-
-#container {
-  margin:0 auto;
-  width:960px;
-}*/
-
-/*header {
-  height:190px;
-  position:relative;
-}*/
-
-
-/*#logo {*/
-  /*position:relative;
-  top:115px;
-  left:0;*/
- /* size: 60px;
- position: absolute;
- margin: -300px 500px 20px 150px;
- height: 60px;
-}*/
 
 
 .logo {
+
   float: left;
   text-align: left;
   margin-left: 1.5957447%;
   width: 36.1702128%;  /*340px/940px */
 }
-
-/*img {
- size: 80px;
- display: inline-block;
- padding: 2px 0 20px;
-}
-*/
 
 
 
@@ -150,27 +120,7 @@ h4 {
 =03 NAVIGATION (mainMenu)
 -----------------------------------------------------------------------------
 
-/*
-nav {
-  position:absolute;
-  right:-10px;
-  top:0;
-}
-*/
 
-
-/*header {
-  margin-bottom: 20px
-}*/
-
-/* Logo */
-
-/*.logo {
-  float: left;
-  text-align: center;
-  margin-left: 1.5957447%;
-  width: 36.1702128%; /* 340px/940px */
-/*}*/
 
 /* Navigation */
 
@@ -178,7 +128,7 @@ nav {
   position: relative;
   text-align: center;
   margin-top: 30px;
-  margin-left: 10px;
+  margin-left: 5px;
   margin-right: 0,0319148%; /* 5px/940px */
 }
 nav ul li {
@@ -245,7 +195,7 @@ nav ul li a:hover {
 #signin{
   position: relative;
   float: left;
-  margin: 2px 1px;
+  margin: 5px 1px 5px 5px;
 }
 
 #socialMedia {
@@ -295,7 +245,7 @@ nav ul li a:hover {
 }
 
 /*-----------------------------------------------------------------------------
-=06 Main
+=05 Main
 -----------------------------------------------------------------------------*/
 .main {
   line-height: 1.5;
@@ -324,7 +274,7 @@ nav ul li a:hover {
 
 
 /*----------------------------------------------------------------------------- 
-=07 FOOTER 
+=06 FOOTER 
 -----------------------------------------------------------------------------*/
 
 footer {
@@ -348,7 +298,7 @@ footer {
 }
 
 /** --------------------------------------------------------------------
-   Media Queries
+=07 Media Queries
 -------------------------------------------------------------------- *//*
 
 /* > 1300px */
