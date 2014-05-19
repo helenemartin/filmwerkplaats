@@ -25,7 +25,8 @@ fr:
     home: "Accueil"
     about: "A Propos"
   about_page:
-    quote: "bla"
     paragraph: "bla"
+    reference: "bla"
+    bottom: "bla"
   session:
     logged_in_as:
