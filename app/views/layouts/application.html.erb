@@ -28,8 +28,8 @@
                 <%= button_to "English", locale_path("en"), method: :put %> |
                 <%= button_to "French", locale_path("fr") , method: :put %>
               <ul>   
-                <li><%= link_to "Home", posts_path %></li>
-                <li><%= link_to "About", pages_about_path %></li>
+                <li><%= link_to t("homepage.home"), posts_path %></li>
+                <li><%= link_to t("homepage.about"), pages_about_path %></li>
                 <li><%= link_to "Filmwerkplaats", "http://filmwerkplaats.hotglue.me/about" %></li>
               </ul>     
              </nav>

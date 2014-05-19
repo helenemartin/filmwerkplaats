@@ -24,5 +24,8 @@ fr:
     title: "La Machine de Sklovsky"
     home: "Accueil"
     about: "A Propos"
+  about_page:
+    quote: "bla"
+    paragraph: "bla"
   session:
     logged_in_as:
