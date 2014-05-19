@@ -208,39 +208,43 @@ nav ul li a:hover {
    display:inline-block;
    width:60px;
    height:60px;
-   background:blue; 
-   text-indent:-9999em;
 }
 
-#socialMedia ul li.facebook {
+
+#socialMedia ul li a {
+  display: block;
+  height: 100%
+}
+
+#socialMedia ul li.facebook a {
   background:url(/assets/filmwerkplaatsnav.png) 0px 64px;
 }
-#socialMedia ul li.vimeo {
+#socialMedia ul li.vimeo a {
   background:url(/assets/filmwerkplaatsnav.png) -59px 63px; 
 }
 
-#socialMedia ul li.linkedIn {
+#socialMedia ul li.linkedIn a {
   background:url(/assets/filmwerkplaatsnav.png) -120px 64px; 
 }
 
-#socialMedia ul li.rss {
+#socialMedia ul li.rss a {
   background:url(/assets/filmwerkplaatsnav.png) -180px 64px; 
 }
 
 
-#socialMedia ul li.facebook:hover {
+#socialMedia ul li.facebook:hover a {
   background:url(/assets/filmwerkplaatsnav.png) 0px 0px; 
 }
 
-#socialMedia ul li.vimeo:hover {
+#socialMedia ul li.vimeo:hover a {
   background:url(/assets/filmwerkplaatsnav.png) -60px 0px; 
 }
 
-#socialMedia ul li.linkedIn:hover {
+#socialMedia ul li.linkedIn:hover a{
   background:url(/assets/filmwerkplaatsnav.png) -120px 0px; 
 }
 
-#socialMedia ul li.rss:hover {
+#socialMedia ul li.rss:hover a {
   background:url(/assets/filmwerkplaatsnav.png) -180px 0px; 
 }
 

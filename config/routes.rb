@@ -12,6 +12,13 @@ Filmwerkplaats::Application.routes.draw do
   end
   
   root :to => 'posts#index' 
+
+  scope "(:locale)", locale: /en|fr/ do
+  resources :index
+end
+
+get '/:locale' => 'posts#index'
+get '/:locale' => 'pages#about'
   
  # show a list of existing posts
 
