@@ -22,3 +22,6 @@
 en:
   homepage:
     title: "Filmwerkplaats' Plot Machine"
+  session:
+    logged_in_as: ""
+    

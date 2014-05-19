@@ -3,7 +3,6 @@ class LocaleController < ApplicationController
   def update
     session[:locale] = params[:locale]
     
-    
-    redirect_to post/index
+    redirect_to root_path
   end
 end

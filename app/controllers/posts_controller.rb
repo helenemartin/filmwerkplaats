@@ -44,7 +44,12 @@ class PostsController < ApplicationController
     end
   end
 
+  def edit
+    @post = Post.find(params[:id])
+  end
+
   def update
+    @post = Post.find(params[:id])
     respond_to do |format|
       if @product.update(product_params)
         format.html { redirect_to @product, notice: 'Post was successfully updated.' }
