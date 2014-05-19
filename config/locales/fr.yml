@@ -22,3 +22,7 @@
 fr:
   homepage:
     title: "La Machine de Sklovsky"
+    home: "Accueil"
+    about: "A Propos"
+  session:
+    logged_in_as:
