@@ -1,0 +1,2 @@
+module LocaleControllerHelper
+end
