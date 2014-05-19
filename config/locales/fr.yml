@@ -20,5 +20,5 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 fr:
-    index:
-      title: "La Machine de Sklovsky"
+  homepage:
+    title: "La Machine de Sklovsky"

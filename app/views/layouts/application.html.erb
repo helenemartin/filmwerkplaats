@@ -21,12 +21,12 @@
             <div class="group">
                <div class= "logo">
               <%= image_tag "filmwerkplaatslogoblack.jpg", alt: "Filmwerkplaats logo" %>
-               <h1>Filmwerkplaats'plot machine</h1>
+               <h1><%= t("homepage.title") %></h1>
             </div>
               <nav>
                 Language:
-                <%= link_to_unless_current "English", locale: "en" %> |
-                <%= link_to_unless_current "French", locale: "fr" %>
+                <%= button_to "English", locale_path("en"), method: :put %> |
+                <%= button_to "French", locale_path("fr") , method: :put %>
               <ul>   
                 <li><%= link_to "Home", posts_path %></li>
                 <li><%= link_to "About", pages_about_path %></li>

@@ -11,15 +11,10 @@ Filmwerkplaats::Application.routes.draw do
     get :autocomplete_tag_name, :on => :collection    
   end
   
-  root :to => 'posts#index' 
-
-  scope "(:locale)", locale: /en|fr/ do
-  resources :index
-end
-
-get '/:locale' => 'posts#index'
-get '/:locale' => 'pages#about'
   
+  put '/locale/:locale' => 'locale#update', as: :locale
+  
+  root :to => 'posts#index' 
  # show a list of existing posts
 
   # See how all your routes lay out with "rake routes"
