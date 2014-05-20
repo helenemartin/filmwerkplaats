@@ -55,6 +55,5 @@ en:
     postupdated:
     form:
       title: "Title"
-      tag: "Tags"
-      tag_text: "Tags (separated by commas)"
+      tag: "Tags (separated by commas)"
       upload: "Upload"

@@ -5,7 +5,7 @@
 
       <ul>
       <% @post.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+    <li><%= msg %></li>
       <% end %>
       </ul>
     </div>
@@ -16,7 +16,7 @@
     <%= f.text_area :title %>
   </div>
   <div class="field">
-    <%= f.label :tag_list, "Tags (separated by commas)" %><br />
+    <%= f.label :tag_list, t("post.form.tag") %><br />
     <%= f.autocomplete_field :tag_list, autocomplete_tag_name_posts_path, 'data-delimiter' => ',' %>
   </div>
 

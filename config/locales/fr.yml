@@ -55,7 +55,6 @@ fr:
     postupdated:
     form:
       title: "Titre"
-      tag: "Etiquettes"
-      tag_text: "Etiquettes (séparées par des virgules"
+      tag: "Etiquettes (séparées par des virgules)"
       upload: "Télécharger"
  
