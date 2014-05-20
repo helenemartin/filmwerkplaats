@@ -18,15 +18,20 @@
 <!-- BEGIN #header -->
     <header>
             <div class="group">
-               <div class= "logo">
-              <%= image_tag "filmwerkplaatslogoblack.jpg", alt: "Filmwerkplaats logo" %>
-               <h1><%= t("homepage.title") %></h1>
-            </div>
+               
               <nav>
-                Languages:
-                <%= button_to t("homepage.language_1"), locale_path("en"), method: :put %> |
-                <%= button_to t("homepage.language_2"), locale_path("fr") , method: :put %>
-              <ul>   
+                
+              <ul>
+                <li>
+                  <div class= "my-picture">
+                    <%= image_tag "filmwerkplaatslogoblack.jpg", alt: "Filmwerkplaats logo" %>
+                  </div> 
+                </li>
+                <li>
+                  Languages:
+                  <%= button_to t("homepage.language_1"), locale_path("en"), method: :put %> |
+                  <%= button_to t("homepage.language_2"), locale_path("fr") , method: :put %>
+                </li>
                 <li><%= link_to t("homepage.home"), posts_path %></li>
                 <li><%= link_to t("homepage.about"), pages_about_path %></li>
                 <li><%= link_to "Filmwerkplaats", "http://filmwerkplaats.hotglue.me/about" %></li>
@@ -35,6 +40,8 @@
           </div> 
           <div class="clear"></div>
     </header>
+
+               <h1><%= t("homepage.title") %></h1>
 
       <div id="socialMedia">
         <ul>
@@ -66,7 +73,7 @@
           <div class="inner">
 
             <%= yield %>
-          
+
           </div>
         </div>
     </section>

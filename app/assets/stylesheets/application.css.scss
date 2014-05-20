@@ -104,13 +104,18 @@ h4 {
   max-width: 1300px;
 }
 
+#container {
+  margin:0 auto;
+  width:960px;
+}
 
-.logo {
 
-  float: left;
-  text-align: left;
-  margin-left: 1.5957447%;
-  width: 36.1702128%;  /*340px/940px */
+.my-picture img {
+ size: 20px;
+ display: inline-block;
+ height: 65px;
+
+
 }
 
 
