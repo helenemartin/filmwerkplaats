@@ -29,4 +29,27 @@ en:
     reference: "[*]In Shklovsky, Viktor, Literature and Cinematography, 1905, p 43."
     bottom: "Filmwerkplaats'plot machine is inspired by Sklovsky's comment. It aims at classifying 16mm film fragments handfully picked from the film archive of Filmwerkplaats, Rotterdam. Through programming, the foundations for an online taxonomic system are explored. This project is a preliminary sketch for this plot machine that instead of beeing spun is generated automatically on this Rails application to perhaps generate different meanings each time a tag is clicked."
   session:
-    logged_in_as: ""
+    session:
+    login:
+    logout: "Log out"
+    editprofile: "Edit Profile"
+    logged_in_as: "Logged in as "
+    signin:
+    signout:
+    confirm: "Are you sure?"
+    forgotpass: "Forgot your password?"
+  post: 
+    editpost: "Edit post"
+    newpost: "New post"
+    show: "Show"
+    back: "Back"
+    tag: "Tag(s)"
+    upload:
+    edit: "Edit"
+    delete: "Delete"
+    postcreated:
+    postdeleted:
+    postupdated:
+  form:
+    title:
+    upload:

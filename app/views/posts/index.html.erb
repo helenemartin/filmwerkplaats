@@ -8,23 +8,22 @@
       
   </div>
 
-  <%= link_to 'New Post' , new_post_path %>
+  <%= link_to t("post.newpost"), new_post_path %>
 
 <% @posts.each do |post| %>
  
     <div class="content">
-      Tags:
+       <%= t("post.tag") %>
       <% post.tag_list.each do |tag| %>
         <%= link_to tag, tag_path(tag)  %>
       <% end %>
       <%= link_to image_tag(post.photo_url, :width => 300), post_path(post) if post.photo.present? %>
       <%= link_to video_tag(post.video_url, :width => 300), post_path(post) if post.video.present? %>
       <%= simple_format post.description %>
-      <%= link_to t("posts.index.show_link"), post_path(post) %>
-      <%# render :partial => "admin_links", :locals => { :post => post } %>
+      <%= link_to t("post.show"), post_path(post) %>
       <% if signed_in? %>
-        <%= link_to 'Edit', edit_post_path(post) %>
-        <%= link_to 'Delete', post_path(post), method: :delete, confirm: "Are you sure?" %>
+        <%= link_to t("post.edit"), edit_post_path(post) %>
+        <%= link_to t("post.delete"), post_path(post), method: :delete, confirm: t("session.confirm") %>
       <% end %>
     </div>
 <% end %>

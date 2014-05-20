@@ -29,4 +29,26 @@ fr:
     reference: "bla"
     bottom: "bla"
   session:
-    logged_in_as:
+    login:
+    logout: "Finir Session"
+    editprofile: "Editer Profile"
+    logged_in_as: "Enregistré(e) sous "
+    signin:
+    signout:
+    confirm: "Voulez-vous effacer cette trame?"
+    forgotpass: "Avez-vous oublié votre mot de passe?"
+  post: 
+    editpost: "Editer"
+    newpost: "Nouvelle trame"
+    show: "Montrer"
+    back: "Retour"
+    tag: "Etiquette(s)"
+    upload:
+    edit: "Editer"
+    delete: "Effacer"
+    postcreated:
+    postdeleted:
+    postupdated:
+  form:
+    title:
+    upload:

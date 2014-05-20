@@ -1,7 +1,7 @@
-<h1>Editing posts</h1>
+<h2><%= t("post.editpost") %></h2>
 <%= form_for(@post) do |f| %>
 
 <% end %>
 
-<%= link_to 'Show', @post %> |
-<%= link_to 'Back', post_path %>
+<%= link_to t("post.show"), @post %> |
+<%= link_to t("post.back"), post_path %>
