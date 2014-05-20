@@ -27,9 +27,10 @@ fr:
     home: "Accueil"
     about: "A Propos"
   about_page:
-    paragraph: "bla"
-    reference: "bla"
-    bottom: "bla"
+    title: "A Propos"
+    paragraph: "En 1917, quelqu’un a publié un article conçis relatant de scénaristes, qui croulant sous pression, avaient conçu une machina qui produisait des intrigues. Imaginez  une rangée de films enroulés sur plusieures bobines. Une contient la profession des gens, la seconde: les pays du monde, la troisième : les ages variés, la quatrième : des actions (par example, embrasser, grimper une cheminée, se battre, sauter dans l’eau, tirer une arme à feu). Quelqu’un tire la manivelle et les mélange au hazard. Ensuite, il regarde les résultat passant dans une rainure et analise le charabia conséquent. Cette machine est assez particulière, mais elle donne aux Américains un choc escompté*. "
+    reference: "*Dans, Viktor Shlovski, Litérature et Cinématographie, 1925, p.43"
+    bottom: "La machine à intrigues tends à reproduire un système similaire via un programme de tags (ou étiquettes) programmés sur une application Rails. A l’état d’ébauche, peut-être permettera-t’elle d’effectuer ce mélange de genres, laissant la place au hazard"
   session:
     login: "Entrer"
     logout: "Finir Session"
