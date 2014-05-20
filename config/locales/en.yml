@@ -21,6 +21,8 @@
 
 en:
   homepage:
+    language_1: English
+    language_2: French
     title: "Filmwerkplaats' Plot Machine"
     home: "Home"
     about: "About"
@@ -30,11 +32,13 @@ en:
     bottom: "Filmwerkplaats'plot machine is inspired by Sklovsky's comment. It aims at classifying 16mm film fragments handfully picked from the film archive of Filmwerkplaats, Rotterdam. Through programming, the foundations for an online taxonomic system are explored. This project is a preliminary sketch for this plot machine that instead of beeing spun is generated automatically on this Rails application to perhaps generate different meanings each time a tag is clicked."
   session:
     login: "Login"
-    logout: "Log out"
+    logout: "Logout"
     editprofile: "Edit Profile"
     logged_in_as: "Logged in as "
     signup: "Sign up"
     signout:
+    password: "Password"
+    passwordconfirmation: "Password confirmation"
     confirm: "Are you sure?"
     forgotpass: "Forgot your password?"
   post: 
@@ -49,6 +53,8 @@ en:
     postcreated:
     postdeleted:
     postupdated:
-  form:
-    title:
-    upload:
+    form:
+      title: "Title"
+      tag: "Tags"
+      tag_text: "Tags (separated by commas)"
+      upload: "Upload"

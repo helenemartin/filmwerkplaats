@@ -21,7 +21,9 @@
 
 fr:
   homepage:
-    title: "La Machine de Sklovsky"
+    language_1: "Anglais"
+    language_2: "Français"
+    title: "La Machine a Intrigues de Sklovsky"
     home: "Accueil"
     about: "A Propos"
   about_page:
@@ -35,6 +37,8 @@ fr:
     logged_in_as: "Enregistré(e) sous "
     signin:
     signup: "Souscrire"
+    password: "Mot de Passe"
+    passwordconfirmation: "Confirmez Mot de Passe"
     confirm: "Voulez-vous effacer cette trame?"
     forgotpass: "Avez-vous oublié votre mot de passe?"
   post: 
@@ -49,6 +53,9 @@ fr:
     postcreated:
     postdeleted:
     postupdated:
-  form:
-    title:
-    upload:
+    form:
+      title: "Titre"
+      tag: "Etiquettes"
+      tag_text: "Etiquettes (séparées par des virgules"
+      upload: "Télécharger"
+ 

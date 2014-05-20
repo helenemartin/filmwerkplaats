@@ -5,8 +5,7 @@
   <%= favicon_link_tag 'faviconfwp.ico' %>
   <%= stylesheet_link_tag "application.css", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= stylesheet_link_tag "application", "custom-theme/jquery-ui-1.8.9.custom" %>  
-  <%= javascript_include_tag "jquery-ui-1.10.4.custom.min", "autocomplete-rails" %>
+  <%= stylesheet_link_tag "application", "jquery-ui-1.10.4.custom" %> 
   <%= csrf_meta_tags %>
 
 </head>
@@ -25,8 +24,8 @@
             </div>
               <nav>
                 Language:
-                <%= button_to "English", locale_path("en"), method: :put %> |
-                <%= button_to "French", locale_path("fr") , method: :put %>
+                <%= button_to t("homepage.language_1"), locale_path("en"), method: :put %> |
+                <%= button_to t("homepage.language_2"), locale_path("fr") , method: :put %>
               <ul>   
                 <li><%= link_to t("homepage.home"), posts_path %></li>
                 <li><%= link_to t("homepage.about"), pages_about_path %></li>
@@ -50,8 +49,8 @@
                 <%= link_to t("session.editprofile"), edit_user_registration_path, :class => 'navbar-link' %> |
                 <%= link_to t("session.logout"), destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
               <% else %>
-                <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-                <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+                <%= link_to t("session.signup"), new_user_registration_path, :class => 'navbar-link'  %> |
+                <%= link_to t("session.login"), new_user_session_path, :class => 'navbar-link'  %>
               <% end %>
               <% if notice %>
                 <p class="alert alert-success"><%= notice %></p>
