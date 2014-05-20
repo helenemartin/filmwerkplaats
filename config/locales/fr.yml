@@ -29,12 +29,12 @@ fr:
     reference: "bla"
     bottom: "bla"
   session:
-    login:
+    login: "Entrer"
     logout: "Finir Session"
     editprofile: "Editer Profile"
     logged_in_as: "Enregistré(e) sous "
     signin:
-    signout:
+    signup: "Souscrire"
     confirm: "Voulez-vous effacer cette trame?"
     forgotpass: "Avez-vous oublié votre mot de passe?"
   post: 
