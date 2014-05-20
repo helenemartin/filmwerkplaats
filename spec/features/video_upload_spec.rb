@@ -13,7 +13,7 @@ feature "Video upload" do
     click_button 'Sign in'
 
     visit '/'
-    click_link "New Post"
+    click_link "New post"
 
     fill_in :post_title, with: "Grotte"
     fill_in :post_tag_list, with: "123"

@@ -12,6 +12,14 @@ describe PostsController do
   end
 
   describe "Get 'post new'" do
+    describe "When not logged in" do
+      it "should redirect" do
+        get :new
+        response.should be_redirect
+      end
+
+    end
+
     it "should be successful" do
       sign_in user
       get :new
