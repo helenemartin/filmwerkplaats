@@ -1,2 +1,2 @@
-![Viktor](/images/Sklovsky.jpg "Flyer")
+![Viktor](//images/Sklovsky.jpg "Flyer")
 
