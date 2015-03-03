@@ -13,5 +13,5 @@ I wanted to explore the idea of a randomizing web app for Filmwerplaats, an inde
 
 My AWS bucket was hacked so I decided to leave this project.
 
-I am starting all over from scratch using Pinterest as a template with [Eppinglette](https://epinglette.herokuapp.com/)
+I am starting all over from scratch using Pinterest as a template with [Epinglette](https://epinglette.herokuapp.com/)
 
